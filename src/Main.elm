@@ -17,7 +17,7 @@ adventure : List String
 adventure = ["You are in a room.\nThere is tea here.\n\n> "
             ,"DRINK TEA"
             ,"\n\nYou win.\n\n\nPlay again?\n\n> "
-            ,"YES "]
+            ,"YES"]
 
 type Action = NoOp | Tick | Type
 
