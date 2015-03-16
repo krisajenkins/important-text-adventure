@@ -3765,7 +3765,7 @@ Elm.Main.make = function (_elm) {
    var sharing = A2($Html.div,
    _L.fromArray([$Html$Attributes.$class("sharing")]),
    _L.fromArray([A2($Html.a,
-   _L.fromArray([$Html$Attributes.href("https://twitter.com/intent/tweet?url=https://krisajenkins.github.io/important-text-adventure/&text=important+Text+Adventure+by+@krisajenkins")]),
+   _L.fromArray([$Html$Attributes.href("https://twitter.com/intent/tweet?url=https://krisajenkins.github.io/important-text-adventure/&text=Important+Text+Adventure+by+@krisajenkins")]),
    _L.fromArray([A2($Html.button,
    _L.fromArray([$Html$Attributes.$class("btn btn-primary")]),
    _L.fromArray([A2($Html.span,
@@ -3830,7 +3830,7 @@ Elm.Main.make = function (_elm) {
    var adventure = _L.fromArray(["You are in a room.\nThere is tea here.\n\n> "
                                 ,"DRINK TEA"
                                 ,"\n\nYou win.\n\n\nPlay again?\n\n> "
-                                ,"YES "]);
+                                ,"YES"]);
    var initialModel = {_: {}
                       ,column: 0
                       ,content: adventure
