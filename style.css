@@ -1,0 +1,38 @@
+body {
+    font-family: 'Neuzeit', serif;
+}
+
+code {
+    font-family: 'Inconsolata', serif;
+}
+
+#main {
+    margin: 30px 0;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.screen,
+code {
+    color: #00ff12;
+    background-color: #1b1d1e;
+}
+
+.screen {
+    font-size: 2rem;
+    border-radius: 15px;
+    border: solid 10px tan;
+}
+
+.sharing {
+    text-align: right;
+}
