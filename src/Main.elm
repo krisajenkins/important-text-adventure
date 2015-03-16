@@ -40,7 +40,7 @@ screenView s = div [class "screen well"]
 
 sharing : Html
 sharing = div [class "sharing"]
-              [a [href "https://twitter.com/intent/tweet?url=https://krisajenkins.github.io/important-text-adventure/&text=important+Text+Adventure+by+@krisajenkins"]
+              [a [href "https://twitter.com/intent/tweet?url=https://krisajenkins.github.io/important-text-adventure/&text=Important+Text+Adventure+by+@krisajenkins"]
                  [button [class "btn btn-primary"]
                          [span [class "fa fa-twitter"] []
                          ,text " Tweet This"]]]
