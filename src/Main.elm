@@ -12,6 +12,7 @@ import List (head,filter,(::))
 import Signal
 import String
 import Keyboard
+import Touch
 
 adventure : List String
 adventure = ["You are in a room.\nThere is tea here.\n\n> "
@@ -104,20 +105,13 @@ step action model =
            Tick -> tick isEven model
            Type -> tick isOdd model)
 
-gameTypes : Signal Action
-gameTypes = Signal.map (\_ -> Tick)
-                       (every (75 * millisecond))
-
-keyTypes : Signal Action
-keyTypes = Signal.map (\_ -> Type)
-                       Keyboard.lastPressed
-
 model : Signal Model
 model = foldp step
               initialModel
               (mergeMany [subscribe uiChannel
-                         ,gameTypes
-                         ,keyTypes])
+                         ,Signal.map (\_ -> Tick) (every (75 * millisecond))
+                         ,Signal.map (\_ -> Type) Keyboard.lastPressed
+                         ,Signal.map (\_ -> Type) Touch.touches])
 
 main : Signal Html
 main = rootView <~ model
